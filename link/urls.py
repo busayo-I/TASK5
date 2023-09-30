@@ -1,8 +1,9 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import VideoViewSet
+
 router = DefaultRouter()
-router.register('api', VideoViewSet)
+router.register(r'video', VideoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
