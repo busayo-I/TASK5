@@ -129,3 +129,5 @@ MEDIA_URL = '/media/'
 
 # Define the filesystem path where media files will be stored
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+ALLOWED_HOSTS = ['*']
