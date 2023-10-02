@@ -30,7 +30,6 @@ prompt-toolkit==3.0.39
 PyJWT==2.8.0
 python-dateutil==2.8.2
 python-decouple==3.8
-python-dotenv==1.0.0
 pytz==2023.3.post1
 redis==4.6.0
 requests==2.31.0
