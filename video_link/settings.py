@@ -131,3 +131,14 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ALLOWED_HOSTS = ['*']
+
+# # video_project/settings.py
+# CELERY_BROKER_URL = 'redis://localhost:6379/0'  # Configure the URL for your RabbitMQ server
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+
+# settings.py
+
+RABBITMQ_HOST = 'localhost'  # Replace with the actual RabbitMQ server's hostname or IP
+RABBITMQ_PORT = 5672         # Default RabbitMQ port
+RABBITMQ_USER = 'guest'      # Use 'guest' as the username
+RABBITMQ_PASS = 'guest'      # Use 'guest' as the password

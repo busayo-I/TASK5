@@ -1,9 +1,10 @@
+# video_project/urls.py
 from django.urls import path
-from . import views
+from link.views import CreateVideo, AddVideoData, CompleteVideo, StreamVideo
 
 urlpatterns = [
-    path('create_video/', views.CreateVideo.as_view(), name='create_video'),
-    path('add_video_chunk/<int:video_id>/', views.AddVideoChunk.as_view(), name='add_video_chunk'),
-    path('complete_video/<int:video_id>/', views.CompleteVideo.as_view(), name='complete_video'),
-    path('stream_video/<int:video_id>/', views.StreamVideo.as_view(), name='stream_video'),
+    path('create/', CreateVideo.as_view(), name='create_video'),
+    path('add_data/<int:video_id>/', AddVideoData.as_view(), name='add_video_data'),
+    path('complete/<int:video_id>/', CompleteVideo.as_view(), name='complete_video'),
+    path('stream/<int:video_id>/', StreamVideo.as_view(), name='stream_video'),
 ]
